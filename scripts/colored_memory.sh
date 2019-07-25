@@ -2,7 +2,7 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-source "$CURRENT_DIR/scripts/helpers.sh"
+source "$CURRENT_DIR/helpers.sh"
 
 memory_percentage() {
     available=`free | head -n2 | tail -1 | awk '{print $2}'`

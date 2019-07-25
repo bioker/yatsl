@@ -2,7 +2,7 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-source "$CURRENT_DIR/scripts/helpers.sh"
+source "$CURRENT_DIR/helpers.sh"
 
 online_status_color() {
     if $(ping -w 3 -c 1 google.com >/dev/null 2>&1); then
