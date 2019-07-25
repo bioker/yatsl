@@ -79,10 +79,10 @@ do_interpolation() {
     local battery_c=`color_by_percentage_backward $battery_p`
     local online_c=`online_status_color`
 
-    local cpu_="${cpu_c}${cpu_p}"
-    local memory_="${memory_c}${memory_p}"
-    local battery_="${battery_c}${battery_p}"
-    local online_="${online_c}WWW"
+    local cpu_="${cpu_c}${cpu_p}${reset_color}"
+    local memory_="${memory_c}${memory_p}${reset_color}"
+    local battery_="${battery_c}${battery_p}${reset_color}"
+    local online_="${online_c}WWW${reset_color}"
 
     local interpolated="${string/$cpu/$cpu_}"
     interpolated="${interpolated/$memory/$memory_}"
