@@ -68,7 +68,7 @@ do_interpolation() {
     local memory="\#{colored_memory}"
     local battery="\#{colored_battery}"
     local online="\#{colored_online}"
-    local reset_color="\#[default]"
+    local reset_color="#[default]"
 
     local cpu_p=`cpu_percentage`
     local memory_p=`memory_percentage`
